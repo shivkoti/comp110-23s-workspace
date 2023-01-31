@@ -6,12 +6,12 @@ word: str = input("Enter a 5-character word: ")
 number: int = 0
 if len(word) != 5:
     print("Error: Word must contain 5 characters")
-    raise(SystemExit)     
+    raise (SystemExit)     
 else:
     letter: str = input("Enter a single character: ")
     if len(letter) != 1:
         print("Error: Character must be a single character.")
-        raise(SystemExit)
+        raise (SystemExit)
     else:
         print("Searching for " + letter + " in " + word)
     if letter == word[0]:
