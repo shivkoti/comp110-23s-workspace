@@ -1,4 +1,4 @@
-"""One-Shot Wordle"""
+"""One-Shot Wordle."""
 
 __author__ = "730556602"
 
@@ -17,18 +17,18 @@ while len(guess) != len(word):
 
 
 if len(guess) == len(word):
-        while counter < len(word):
-            if guess[counter] == word[counter]:
-                emojis = emojis + GREEN_BOX
-            else:
-                characterexist = False
-                alternatecounter = 0
-                while characterexist == False and (alternatecounter < len(word)):
-                    if word[alternatecounter] == guess[counter]:
+    while counter < len(word):
+        if guess[counter] == word[counter]:
+            emojis = emojis + GREEN_BOX
+        else:
+            characterexist = False
+            alternatecounter = 0
+            while characterexist is False and (alternatecounter < len(word)):
+                if word[alternatecounter] == guess[counter]:
                         characterexist = True
-                    else:
+                else:
                         alternatecounter = alternatecounter + 1
-                if characterexist == True:
+                if characterexist is True:
                     emojis = emojis + YELLOW_BOX
                 else:
                     emojis = emojis + WHITE_BOX
@@ -40,4 +40,3 @@ if guess == word:
     print("Woo! You got it!")
 else:
     print("Not quite. Play again soon!")
-
