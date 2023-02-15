@@ -32,7 +32,7 @@ if len(guess) == len(word):
                     emojis = emojis + YELLOW_BOX
                 else:
                     emojis = emojis + WHITE_BOX
-            counter = counter + 1
+                    counter = counter + 1
 
 print(emojis)
 
