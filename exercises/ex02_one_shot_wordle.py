@@ -25,9 +25,9 @@ if len(guess) == len(word):
             alternatecounter = 0
             while characterexist is False and (alternatecounter < len(word)):
                 if word[alternatecounter] == guess[counter]:
-                        characterexist = True
+                    characterexist = True
                 else:
-                        alternatecounter = alternatecounter + 1
+                    alternatecounter = alternatecounter + 1
                 if characterexist is True:
                     emojis = emojis + YELLOW_BOX
                 else:
