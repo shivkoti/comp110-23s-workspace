@@ -50,7 +50,7 @@ def main() -> None:
         if answer == "codes":
             print(f"You won in {turn}/6 turns!")
             turn = 7
-            
+
     turn = turn + 1
     
 if __name__ == "__main__":
