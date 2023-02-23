@@ -51,7 +51,7 @@ def main() -> None:
         if answer == "codes":
             print(f"You won in {chances}/6 turns!")
             chances = 7
-            
+
         chances = chances + 1
     
 if __name__ == "__main__":
