@@ -31,26 +31,28 @@ def emojified(guess: str, secret_word: str) -> str:
     return emojis
 
 def input_guess(expected_length: int) -> str:
+    "Input guess to make sure it is the correct length"
     guess: str = str(input(f"Enter a {expected_length} character word: "))
     while expected_length != len(guess):
-        guess: str = str(input(f"That wasn't {expected_length} chars! Try again: "))
+        guess = str(input(f"That wasn't {expected_length} chars! Try again: "))
     if expected_length == len(guess):
         return(guess)
 
 def main() -> None:
     """The entrypoint of the program and main game loop."""
-    turn: int = 1
+    chances: int = 1
     secret_word: str = "codes"
-    while turn <= 6:
-        print(f"=== Turn {turn}/6 ===")
+    while chances <= 6:
+        print(f"=== Turn {chances}/6 ===")
         answer: str = input_guess(5)
         print(emojified(answer, "codes"))
-        if turn == 6:
+        if chances == 6:
             print("X/6 - Sorry, try again tomorrow!")
         if answer == "codes":
-            print(f"You won in {turn}/6 turns!")
-            turn = 7
-    turn = turn + 1
+            print(f"You won in {chances}/6 turns!")
+            chances = 7
+            
+        chances = chances + 1
     
 if __name__ == "__main__":
     main()
