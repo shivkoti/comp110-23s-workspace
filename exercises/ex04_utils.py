@@ -1,5 +1,5 @@
 """`list` Utility Functions."""
-___author___: "730556602"
+__author__ = "730556602"
 
 
 def all(my_list: list[int], number: int) -> bool:  
