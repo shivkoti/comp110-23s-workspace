@@ -1,7 +1,9 @@
 """`list` Utility Functions."""
 ___author___: 730556602
 
-def all(my_list: list[int],number: int) -> bool:  
+def all(my_list: list[int],number: int) -> bool:
+    
+      
     """Indicates if all numbers in list match indicated number."""
     counter: int = 0
     if len(my_list) == 0:
@@ -13,8 +15,10 @@ def all(my_list: list[int],number: int) -> bool:
         
     return True
         
-def max(list_0: list[int]) -> int:  
-    """ Returns the largest number in the list."""
+def max(list_0: list[int]) -> int:
+
+
+    """Returns the largest number in the list."""
     if len(list_0) == 0:
         raise ValueError("max() arg is an empty List")
     max_number = list_0[0]
@@ -25,7 +29,9 @@ def max(list_0: list[int]) -> int:
         counter = counter + 1
     return max_number
 
-def is_equal(list_1: list[int], list_2: list[int]) -> bool:  
+def is_equal(list_1: list[int], list_2: list[int]) -> bool:
+
+
     """True if lists are equal, False otherwise."""
     x: int = 0
     while x < len(list_1) and x < len(list_2):
