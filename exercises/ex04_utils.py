@@ -1,7 +1,8 @@
 """`list` Utility Functions."""
-___author___: 730556602
+___author___: "730556602"
 
-def all(my_list: list[int],number: int) -> bool:  
+
+def all(my_list: list[int], number: int) -> bool:  
     """Indicates if all numbers in list match indicated number."""
     counter: int = 0
     if len(my_list) == 0:
@@ -13,7 +14,7 @@ def all(my_list: list[int],number: int) -> bool:
         
     return True
        
-        
+ 
 def max(list_0: list[int]) -> int:
     """Returns the largest number in the list."""
     if len(list_0) == 0:
