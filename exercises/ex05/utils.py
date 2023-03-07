@@ -20,8 +20,9 @@ def sub(a_list: list[int], a: int, b: int) -> list[int]:
         a = 0
     if b > len(a_list):
         b = len(a_list)
-    if len(a_list) == 0 or a >= len(list):
-        return a_list[] 
+    if len(a_list) == 0: 
+        return a_list[()]
+    if a >= len(a_list):
+        return a_list[()]
     for list in range(0, len(a_list)):
         return [a_list[a], a_list[b]]
-    
