@@ -1,20 +1,23 @@
-
+"""More List Utils and Unit Tests."""
 __author__: "730556602"
 
+
 def only_evens(xs: list[int]) -> list[int]:
-    """Returns even numbers in list"""
+    """Returns even numbers in list."""
     even_numbers: list[int] = []
     for idx in xs:
-        if  idx %2 == 0:
+        if idx % 2 == 0:
             even_numbers.append(idx)
     return even_numbers
+
 
 def concat(list1: list[int], list2: list[int]) -> list[int]:
     """Concatenates two lists of ints and returns the resulting list."""
     return list1 + list2
 
+
 def sub(a_list: list[int], a: int, b: int) -> list[int]:
-    """Returns a List which is a subset of the given list"""
+    """Returns a List which is a subset of the given list."""
     new_list: list[int] = []
     if a < 0:
         a = 0
