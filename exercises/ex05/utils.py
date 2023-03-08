@@ -25,6 +25,6 @@ def sub(a_list: list[int], a: int, b: int) -> list[int]:
         b = len(a_list) - 1
     if len(a_list) == 0 or a >= len(a_list): 
         return new_list
-    for i in range(a, b):
+    for i in range(a, b+1):
         new_list.append(a_list[i])
     return new_list
