@@ -2,12 +2,13 @@
 
 __author__ = "730556602"
 
-points = 0
 smirk_emoji: str = "\U0001F60F"
 sad_face_emoji: str = "\U0001F614"
 lizard_emoji: str = "\U0001F40D"
 whale_emoji: str = "\U0001F433"
 cheetah_emoji: str = "\U0001F406"
+player: str = ""
+points: int = 0
 
 
 def greet() -> None:
