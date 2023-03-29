@@ -16,6 +16,12 @@ def test_invert() -> None:
     assert invert(test_dict) == {"1": "a", "2": "b", "3": "c"}
 
 
+def test_invert_1() -> None:
+    """Tests a basic dictionary."""
+    test_dict: dict[str, str] = {"s": "1", "c": "5", "d": "6"}
+    assert invert(test_dict) == {"1": "s", "5": "c", "6": "d"}
+
+
 def test_multiple_colors() -> None:
     """Tests mulitple colors."""
     test_dict: dict[str, str] = {"Shivani": "green", "Meghan": "green", "Carly": "blue", "Grace": "pink"}
