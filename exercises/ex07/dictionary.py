@@ -29,8 +29,8 @@ def favorite_color(dict_1: dict[str, str]) -> str:
 
 def count(list_1: list[str]) -> dict[str, int]:
     """Counts number of items and list and returns them in dictionary."""
-    new_dict = dict[str, int]
-    for elem in list:
+    new_dict = {}
+    for elem in list_1:
         if elem not in new_dict:
             new_dict[elem] = 1
         elif elem in new_dict:
