@@ -7,7 +7,7 @@ def invert(dict_1: dict[str, str]) -> dict[str, str]:
     """Given dict_1, return new dictionary that inverts the keys and values."""
     new_dict: dict[str, str] = {}
     for key in dict_1:
-        if key in new_dict:
+        if dict_1[key] in new_dict:
             raise KeyError("This is wrong.")
         new_dict[dict_1[key]] = key
     return new_dict    
@@ -25,7 +25,7 @@ def favorite_color(dict_1: dict[str, str]) -> str:
             colors[dict_1[key]] = 1
     for key in colors:
         if colors[key] > max_color_count:
-            max_color = [key]
+            max_color = key
             max_color_count = colors[key]
     return max_color
 

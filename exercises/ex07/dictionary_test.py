@@ -57,4 +57,4 @@ def test_none() -> None:
 def test_count_2() -> None:
     """Tests for one value in list."""
     test_list: list[str] = ["a", "a", "a", "a"]
-    assert count(test_list) == {"a": 3}
+    assert count(test_list) == {"a": 4}
