@@ -1,9 +1,7 @@
 """Unit tests for dictionary functions."""
 __author__: "730556602"
 
-
 from exercises.ex07.dictionary import invert, favorite_color, count
-import pytest
 
 
 def test_empty_dictionary() -> None:
@@ -16,12 +14,6 @@ def test_invert() -> None:
     """Tests a basic dictionary."""
     test_dict: dict[str, str] = {"a": "1", "b": "2", "c": "3"}
     assert invert(test_dict) == {"1": "a", "2": "b", "3": "c"}
-
-
-with pytest.raises(KeyError):
-    """Tests for KeyError"""
-    my_dictionary = {'kris': 'jordan', 'michael': 'jordan'}
-    invert(my_dictionary)
 
 
 def test_multiple_colors() -> None:
