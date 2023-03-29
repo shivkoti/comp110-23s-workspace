@@ -1,9 +1,8 @@
 """Unit tests for dictionary functions."""
-
 __author__: "730556602"
 
-from exercises.ex07.dictionary import invert, favorite_color, count
 
+from exercises.ex07.dictionary import invert, favorite_color, count
 import pytest
 
 
