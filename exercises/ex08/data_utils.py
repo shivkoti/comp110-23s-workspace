@@ -1,5 +1,5 @@
 from csv import DictReader
-from tabulate import tabulate
+
 
 def read_csv_rows(filename: str) -> list[dict[str,str]]:
     """Read csv file and return as a list of dicts with header keys."""
@@ -81,7 +81,6 @@ def count(list_1: list[str]) -> dict[str, int]:
             new_dict[elem] += 1
     return new_dict
 
-        
 
 
         
