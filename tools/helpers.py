@@ -1,4 +1,4 @@
-"""Helper functions used across multiple scripts."""
+"""""Helper functions used across multiple scripts."""
 
 __author__ = "Kris Jordan <kris@cs.unc.edu>"
 
