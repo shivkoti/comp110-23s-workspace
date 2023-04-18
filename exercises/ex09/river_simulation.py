@@ -1,4 +1,4 @@
-"""File to construst my_river."""
+"""File to construct my_river."""
 
 from exercises.ex09.river import River
 
