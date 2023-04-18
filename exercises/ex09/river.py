@@ -10,6 +10,7 @@ class River:
     day: int
     bears: list[Bear]
     fish: list[Fish]
+    
     def __init__(self, num_fish: int, num_bears: int):
         """New River with num_fish Fish and num_bears Bears."""
         self.day: int = 0
@@ -62,10 +63,11 @@ class River:
         
     def repopulate_fish(self):
         """Method to repopulate fish."""
-        num_new_fish = [len(self.fish)//2] * 4
+        num_new_fish = len(self.fish) // 2 * 4
+        new_fish = []
         for i in range(num_new_fish):
-            new_fish = Fish()
-        self.fish.append(new_fish)
+            new_fish.append(Fish())
+        self.fish += new_fish
         return None
     
     def repopulate_bears(self):

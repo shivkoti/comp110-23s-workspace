@@ -6,7 +6,6 @@ class Bear:
     age: int
     hunger_score: int
 
-
     def __init__(self): 
         """Initialzing self."""
         self.age = 0
