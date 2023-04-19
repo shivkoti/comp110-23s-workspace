@@ -75,7 +75,7 @@ class River:
         num_new_bears = len(self.bears) // 2
         for i in range(num_new_bears):
             new_bear = Bear()
-        self.bears.append(new_bear)
+            self.bears.append(new_bear)
         return None
     
     def view_river(self):
