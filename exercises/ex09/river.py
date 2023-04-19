@@ -80,6 +80,9 @@ class River:
     
     def view_river(self):
         """View river function."""
+        print(f"~~~ Day {self.day}: ~~~")
+        print(f"Fish population: {len(self.fish)}")
+        print(f"Bear population: {len(self.bears)}")
         return None
             
     def one_river_day(self):
@@ -110,10 +113,3 @@ class River:
         for i in range(7):
             self.one_river_day()
         
-    def view_river(self):
-        """Presents an update of the number of bears and fish in the river."""
-        print(f"~~~ Day {self.day}: ~~~")
-        print(f"Fish population: {len(self.fish)}")
-        print(f"Bear population: {len(self.bears)}")
-        return None
-            
