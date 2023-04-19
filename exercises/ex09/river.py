@@ -56,7 +56,7 @@ class River:
         """Method to check hunger of bears."""
         surviving_bears = []
         for bear in self.bears:
-            if bear.hunger_score > 0:
+            if bear.hunger_score >= 0:
                 surviving_bears.append(bear)
         self.bears = surviving_bears
         return None
