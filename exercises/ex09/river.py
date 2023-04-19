@@ -26,12 +26,12 @@ class River:
         """Removes old animals."""
         new_fish = []
         for fish in self.fish:
-            if fish.age > 3:
+            if fish.age <= 3:
                 new_fish.append(fish)
         self.fish = new_fish
         new_bears = []
         for bear in self.bears:
-            if bear.age > 5:
+            if bear.age <= 5:
                 new_bears.append(bear)
         self.bears = new_bears
         return None
@@ -48,8 +48,8 @@ class River:
         for bear in self.bears:
             if len(self.fish) >= 5:
                 for i in range(3):
-                    self.remove_fish(3)  
-                    bear.eat(3)
+                    self.remove_fish()  
+                    bear.eat()
         return None
     
     def check_hunger(self):
