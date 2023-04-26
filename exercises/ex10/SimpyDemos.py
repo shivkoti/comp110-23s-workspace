@@ -16,7 +16,7 @@ The implementation of this class is heavily inspired by
 an immensely popular and valuable-to-know library called NumPy 
 (numerical python library). 
 Simpy is a *simp*ler, single dimension implementation 
-of many of the same capabilities of NumPy. 
+of many of the same capabilities of NumPy.
 In a sense, Simpy simps for NumPy."""
 
 __author__ = "YOUR PID HERE"
