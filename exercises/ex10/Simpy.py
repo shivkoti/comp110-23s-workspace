@@ -32,6 +32,10 @@ class Simpy:
     def arange(self, start: float, stop: float, step: float = 1.0) -> None:
         """Fill in the values attribute with range of values."""
         assert step != 0.0
+        if start <= 0:
+            while start > stop:
+                self.values.append(start)
+                start += step
         while start < stop:
             self.values.append(start)
             start += step
@@ -69,6 +73,7 @@ class Simpy:
     def __eq__(self, rhs: Union[float, Simpy]) -> list[bool]:
         """Add ability to use the == operator."""
         result: Simpy = Simpy([])
+        result.values = []
         if isinstance(rhs, float):
             for elem in self.values:
                 result.values.append(elem == rhs)
