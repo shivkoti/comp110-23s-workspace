@@ -11,3 +11,7 @@ class PlaneTicket:
         self.arrival_city = city_b
         self.departure_time = depart
         self.ticket_cost = cost
+
+    def __str__(self) -> str:
+        ticket_str: str = f"Flight from {self.departure_city} at {self.departure_time}"
+        ticket_str += f"Arrive in {self.arrival_city}. Costs ${self.ticket_cost}"
