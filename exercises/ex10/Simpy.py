@@ -96,7 +96,7 @@ class Simpy:
                 i += 1
         return result
 
-    def __getitem__(self, rhs: Union[int, list[bool]]) -> Union[float, 'Simpy']:
+    def __getitem__(self, rhs: Union[int, list[bool]]) -> Union[float, Simpy]:
         """Add subscription notation support."""
         result = Simpy([])
         if isinstance(rhs, int):
