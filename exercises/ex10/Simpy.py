@@ -73,6 +73,7 @@ class Simpy:
     def __eq__(self, rhs: Union[float, Simpy]) -> list[bool]:
         """Add ability to use the == operator."""
         result = Simpy([])
+        values: list[bool] = []
         if isinstance(rhs, float):
             for elem in self.values:
                 result.values.append(elem == rhs)
