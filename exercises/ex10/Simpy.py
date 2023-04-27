@@ -9,7 +9,8 @@ __author__ = "7350556602"
 
 class Simpy:
     """Class Simpy."""
-    values: list[float]
+
+    values: list[float] = []
 
     # TODO: Your constructor and methods will go here.
     def __init__(self, values: list[float]):
@@ -91,7 +92,7 @@ class Simpy:
                 i += 1
         return result
 
-    def __getitem__(self, rhs: int) -> float:
+    def __getitem__(self, rhs: Union[int, list[bool]]) -> Union[float, Simpy]:
         """Add subscription notation support."""
         result: Simpy = Simpy([])
         if isinstance(rhs, int):
