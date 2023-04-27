@@ -8,19 +8,20 @@ __author__ = "7350556602"
 
 
 class Simpy:
+    """Class Simpy."""
     values: list[float]
 
     # TODO: Your constructor and methods will go here.
     def __init__(self, values: list[float]):
-        """Initializes the values attribute."""
+        """Initialize the values attribute."""
         self.values = values
 
     def __str__(self) -> str:
-        """Converts value into a string."""
+        """Convert value into a string."""
         return f'({self.values})'
     
-    def fill(self, elem: float, n: int)-> None:
-        """Fill's Simpy's values with a number of repeating values."""
+    def fill(self, elem: float, n: int) -> None:
+        """Fill Simpy's values with a number of repeating values."""
         self.values = []
         i = 0
         while i < n:
@@ -39,7 +40,7 @@ class Simpy:
         return sum(self.values)
 
     def __add__(self, rhs: Union[float, Simpy]) -> Simpy:
-        """Adds ability to use the + operator."""
+        """Add ability to use the + operator."""
         result: Simpy = Simpy([])
         if isinstance(rhs, float):
             for elem in self.values:
@@ -52,7 +53,7 @@ class Simpy:
         return result
 
     def __pow__(self, rhs: Union[float, Simpy]) -> Simpy:
-        """Adds ability to use the ** operator."""
+        """Add ability to use the ** operator."""
         result: Simpy = Simpy([])
         if isinstance(rhs, float):
             for elem in self.values:
@@ -65,7 +66,7 @@ class Simpy:
         return result
 
     def __eq__(self, rhs: Union[float, Simpy]) -> list[bool]:
-        """Adds ability to use the == operator."""
+        """Add ability to use the == operator."""
         result: Simpy = Simpy([])
         if isinstance(rhs, float):
             for elem in self.values:
@@ -78,7 +79,7 @@ class Simpy:
         return result
 
     def __gt__(self, rhs: Union[float, Simpy]) -> list[bool]:
-        """Adds ability to use the > operator."""
+        """Add ability to use the > operator."""
         result: Simpy = Simpy([])
         if isinstance(rhs, float):
             for elem in self.values:
@@ -91,7 +92,7 @@ class Simpy:
         return result
 
     def __getitem__(self, rhs: int) -> float:
-        """Adds subscription notation support."""
+        """Add subscription notation support."""
         result: Simpy = Simpy([])
         if isinstance(rhs, int):
             return self.values[rhs]
