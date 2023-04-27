@@ -107,4 +107,4 @@ class Simpy:
                 if rhs[i]:
                     result.values.append(self.values[i])
                 i += 1
-        return result
+        return result.values
