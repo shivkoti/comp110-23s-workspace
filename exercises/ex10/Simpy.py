@@ -19,7 +19,7 @@ class Simpy:
 
     def __str__(self) -> str:
         """Convert value into a string."""
-        return f'({self.values})'
+        return f"Simpy({self.values})"
     
     def fill(self, elem: float, n: int) -> None:
         """Fill Simpy's values with a number of repeating values."""
@@ -72,8 +72,7 @@ class Simpy:
 
     def __eq__(self, rhs: Union[float, Simpy]) -> list[bool]:
         """Add ability to use the == operator."""
-        result: Simpy = Simpy([])
-        result.values = []
+        result = Simpy([])
         if isinstance(rhs, float):
             for elem in self.values:
                 result.values.append(elem == rhs)
